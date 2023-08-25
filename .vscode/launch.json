@@ -1,0 +1,22 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "debug",
+      "request": "launch",
+      "command": "pnpm run start:debug",
+      "envFile": "${workspaceFolder}/.vscode/.env",
+      "outFiles": [
+        "${workspaceFolder}/dist/**/*.js"
+      ],
+      "skipFiles": [
+        "<node_internals>/**",
+        "<node_internals>/**/*.js"
+      ],
+      "type": "node-terminal"
+    },
+  ]
+}
